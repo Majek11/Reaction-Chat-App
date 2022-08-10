@@ -1,0 +1,46 @@
+/* Your CSS Here */
+.no-bar::-webkit-scrollbar {
+    width: 0;
+}
+
+.animate-pen {
+    animation: animate-pen 5s infinite alternate;
+}
+
+@keyframes animate-pen {
+    0% {
+        transform: translate(0px);
+    }
+    
+    30% {
+        transform: translate(20px) rotate(-50deg);
+    }
+    
+    40% {
+        transform: translate(20px, -20px) rotate(-20deg);
+    }
+    
+    50% {
+        transform: translate(20px, 0px) rotate(-20deg);
+    }
+    
+    60% {
+        transform: translate(20px, 0px) rotate(360deg);
+    }
+
+    80% {
+        transform: translate(0px, 0px) rotate(360deg);
+    }
+
+    90% {
+        transform: translate(0px, -20px) rotate(360deg);
+    }
+
+    95% {
+        transform: translate(0px, -10px) rotate(360deg);
+    }
+    
+    100% {
+        transform: translate(0px, 0px) rotate(360deg);
+    }
+}
